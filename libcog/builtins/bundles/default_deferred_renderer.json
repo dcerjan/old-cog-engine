@@ -1,0 +1,29 @@
+{
+  "name": "Cog Deferred Renderer Bundle",  
+  "resources": {
+    "shaders": [
+      // deferred
+      { "name": "Deferred/Bake", "vertex": "./builtins/shaders/deferred/bake.vs.glsl", "fragment": "./builtins/shaders/deferred/bake.fs.glsl" },
+      { "name": "Deferred/Compose", "vertex": "./builtins/shaders/common/blit.vs.glsl", "fragment": "./builtins/shaders/deferred/compose.fs.glsl" },
+      { "name": "Deferred/Compose/Deferred", "vertex": "./builtins/shaders/common/blit.vs.glsl", "fragment": "./builtins/shaders/deferred/compose_deferred.fs.glsl" },
+      // effect
+      { "name": "Effect/SSAO", "vertex": "./builtins/shaders/common/blit.vs.glsl", "fragment": "./builtins/shaders/effects/ssao.fs.glsl" },
+      // util
+      { "name": "Util/Composer", "vertex": "./builtins/shaders/common/blit.vs.glsl", "fragment": "./builtins/shaders/util/composer.fs.glsl" },
+      { "name": "Util/Blur/Gaussian/RGBA", "vertex": "./builtins/shaders/common/blit.vs.glsl", "fragment": "./builtins/shaders/util/blur_gaussian_rgba.fs.glsl" },
+      { "name": "Util/Blur/Gaussian/RGB", "vertex": "./builtins/shaders/common/blit.vs.glsl", "fragment": "./builtins/shaders/util/blur_gaussian_rgb.fs.glsl" },
+      { "name": "Util/Blur/Gaussian/RG", "vertex": "./builtins/shaders/common/blit.vs.glsl", "fragment": "./builtins/shaders/util/blur_gaussian_rg.fs.glsl" },
+      { "name": "Util/Blur/Gaussian/R", "vertex": "./builtins/shaders/common/blit.vs.glsl", "fragment": "./builtins/shaders/util/blur_gaussian_r.fs.glsl" },
+      { "name": "Util/FreiChen/Depth", "vertex": "./builtins/shaders/common/blit.vs.glsl", "fragment": "./builtins/shaders/util/frei_chen_depth.fs.glsl" },
+      { "name": "Util/FreiChen/DepthNormal", "vertex": "./builtins/shaders/common/blit.vs.glsl", "fragment": "./builtins/shaders/util/frei_chen_depth_normal.fs.glsl" },
+      // debug
+      { "name": "Debug/Deferred/Position", "vertex": "./builtins/shaders/common/blit.vs.glsl", "fragment": "./builtins/shaders/debug/deferred_position.fs.glsl" },
+      { "name": "Debug/Deferred/Depth", "vertex": "./builtins/shaders/common/blit.vs.glsl", "fragment": "./builtins/shaders/debug/deferred_depth.fs.glsl" },
+      { "name": "Debug/Deferred/Normal", "vertex": "./builtins/shaders/common/blit.vs.glsl", "fragment": "./builtins/shaders/debug/deferred_normal.fs.glsl" },
+      { "name": "Debug/Deferred/Diffuse", "vertex": "./builtins/shaders/common/blit.vs.glsl", "fragment": "./builtins/shaders/debug/deferred_color.fs.glsl" },
+      { "name": "Debug/Deferred/Specular", "vertex": "./builtins/shaders/common/blit.vs.glsl", "fragment": "./builtins/shaders/debug/deferred_specular.fs.glsl" },
+      // common 
+      { "name": "Common/Blit", "vertex": "./builtins/shaders/common/blit.vs.glsl", "fragment": "./builtins/shaders/common/blit.fs.glsl" }
+    ]
+  }
+}

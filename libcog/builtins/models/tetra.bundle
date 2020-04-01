@@ -1,0 +1,64 @@
+model : {
+  name : "Tetraedar",
+  
+  material : {
+    name : "Tetra Material",
+    inputs : {
+      textures : [
+        { 
+          name : "Tetra Checkers",
+          colorFormat : RGB,
+          internalFormat : RGB8,
+          data : [ 255, 0 ,0, 255, 255, 255, 255, 0, 0, 255, 255, 255 ]
+        }
+      ],
+      shader : {
+        stages : {
+          vertex : {{
+            #version 330
+            layout(location = 0) in vec3 vPosition;
+            layout(location = 1) in vec2 vTexCoord;
+            uniform mat4 mat[1]
+            out vec2 fTexCoord;
+            void main() {
+              fTexCoord = vTexCoord;
+              gl_Position = mat[1] * vPosition;
+            }
+          }},
+          fragment : {{
+            #version 330
+            in vec3 fTexCoord;
+            uniform sampler2D tex[1];
+            out vec4 fragcolor;
+            void main() {
+              fragcolor = texture(tex[1], fTexCoord);
+            }
+          }}
+        }
+      }
+    }
+  },
+
+  mesh : {
+    name : "Tetra",
+    drawMethod : triangleStrip,
+    drawUsage : staticDraw,
+    buffers : [
+      // positions
+      buffer : {
+        componentSize : 3,
+        numComponents : 3,
+        bufferType : float,
+        data :  [ -0.5f, -0.5f,  0.5f, 0.0f,  0.5f,  0.0f, 0.5f, -0.5f,  0.5f, 0.0f, -0.5f, -0.5f,-0.5f, -0.5f,  0.5f, 0.5f, -0.5f,  0.5f ]
+      },
+      
+      // texcoords
+      buffer : {
+        componentSize : 2,
+        numComponents : 3,
+        bufferType : float,
+        data :  [ 0.0f, 0.0f, 0.5f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.5f, 1.0f ]
+      }
+    ]
+  }
+}

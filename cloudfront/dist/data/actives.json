@@ -1,0 +1,26 @@
+{
+  cards: [
+    {
+      name: "Empowered Strike",
+      rarity: "common",
+      color: "red",
+      type: "skill",
+      requirements: [
+        item_class_equiped: ["melee_weapon"]
+      ]   ,
+      actions: [
+        { 
+          cooldown: 
+          duration: 0,
+          range: 1,
+          source: ["weapon"],
+          modifiers: [ { strength: +1 }, { damage: +3 } ]
+        }
+      ]
+    },
+    
+    {
+      
+    }
+  ]
+}

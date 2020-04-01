@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="libcog" InternalType="Library">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00030001N0005Debug0000000000000001N0015Debug - MacOS X0000000000000001N0015Debug - Windows000000000000]]>
+    </Plugin>
+    <Plugin Name="CMakePlugin">
+      <![CDATA[[{
+		"name":	"Debug",
+		"enabled":	false,
+		"buildDirectory":	"build",
+		"sourceDirectory":	"$(ProjectPath)",
+		"generator":	"",
+		"buildType":	"",
+		"arguments":	[],
+		"parentProject":	""
+	}, {
+		"name":	"Debug - MacOS X",
+		"enabled":	false,
+		"buildDirectory":	"build",
+		"sourceDirectory":	"$(ProjectPath)",
+		"generator":	"",
+		"buildType":	"",
+		"arguments":	[],
+		"parentProject":	""
+	}, {
+		"name":	"Debug - Windows",
+		"enabled":	false,
+		"buildDirectory":	"build",
+		"sourceDirectory":	"$(ProjectPath)",
+		"generator":	"",
+		"buildType":	"",
+		"arguments":	[],
+		"parentProject":	""
+	}]]]>
+    </Plugin>
+  </Plugins>
+  <Description/>
+  <Dependencies/>
+  <VirtualDirectory Name="misc">
+    <File Name="ideas.txt"/>
+    <File Name="todo.txt"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="builtins">
+    <VirtualDirectory Name="shaders">
+      <VirtualDirectory Name="util">
+        <File Name="builtins/shaders/util/blur_gaussian_rgba.fs.glsl"/>
+        <File Name="builtins/shaders/util/blur_gaussian_r.fs.glsl"/>
+        <File Name="builtins/shaders/util/blur_gaussian_rg.fs.glsl"/>
+        <File Name="builtins/shaders/util/blur_gaussian_rgb.fs.glsl"/>
+        <File Name="builtins/shaders/util/composer.fs.glsl"/>
+        <File Name="builtins/shaders/util/frei_chen_depth.fs.glsl"/>
+        <File Name="builtins/shaders/util/frei_chen_depth_normal.fs.glsl"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="debug">
+        <File Name="builtins/shaders/debug/deferred_color.fs.glsl"/>
+        <File Name="builtins/shaders/debug/deferred_depth.fs.glsl"/>
+        <File Name="builtins/shaders/debug/deferred_normal.fs.glsl"/>
+        <File Name="builtins/shaders/debug/deferred_position.fs.glsl"/>
+        <File Name="builtins/shaders/debug/deferred_specular.fs.glsl"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="common">
+        <File Name="builtins/shaders/common/blit.fs.glsl"/>
+        <File Name="builtins/shaders/common/blit.vs.glsl"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="deferred">
+        <File Name="builtins/shaders/deferred/compose.fs.glsl"/>
+        <File Name="builtins/shaders/deferred/bake.vs.glsl"/>
+        <File Name="builtins/shaders/deferred/bake.fs.glsl"/>
+        <File Name="builtins/shaders/deferred/compose_deferred.fs.glsl"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="effects">
+        <File Name="builtins/shaders/effects/ssao.fs.glsl"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="materials">
+      <File Name="builtins/materials/simple_texture_map.material"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="bundles">
+      <File Name="builtins/bundles/default_deferred_renderer.json"/>
+      <File Name="builtins/bundles/example.json"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="meshes">
+      <File Name="builtins/meshes/cube.json"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="models">
+      <File Name="builtins/models/tetra.bundle"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="examples">
+      <VirtualDirectory Name="Scene">
+        <File Name="builtins/examples/scene/example.scene"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="images">
+      <File Name="builtins/images/gimp.png"/>
+      <File Name="builtins/images/randomnormalmap.png"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="renderer">
+      <File Name="builtins/renderer/renderers.json"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <VirtualDirectory Name="Core">
+    <File Name="Core/cogarray.h"/>
+    <File Name="Core/coghash.h"/>
+    <File Name="Core/coglist.h"/>
+    <File Name="Core/cogstring.c"/>
+    <File Name="Core/cogstring.h"/>
+    <File Name="Core/cogtypes.h"/>
+    <File Name="Core/coggc.c"/>
+    <File Name="Core/coggc.h"/>
+    <File Name="Core/cogarraylist.h"/>
+    <File Name="Core/cogmap.h"/>
+    <File Name="Core/cogpair.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Engine">
+    <File Name="Engine/cogbundle.c"/>
+    <File Name="Engine/cogbundle.h"/>
+    <File Name="Engine/cogcamera.c"/>
+    <File Name="Engine/cogcamera.h"/>
+    <File Name="Engine/cogcolor.h"/>
+    <File Name="Engine/cogcompositor.c"/>
+    <File Name="Engine/cogcompositor.h"/>
+    <File Name="Engine/cogeffects.c"/>
+    <File Name="Engine/cogeffects.h"/>
+    <File Name="Engine/cogframebuffer.c"/>
+    <File Name="Engine/cogframebuffer.h"/>
+    <File Name="Engine/coggizmo.h"/>
+    <File Name="Engine/coggraphics.h"/>
+    <File Name="Engine/cogimageformat.h"/>
+    <File Name="Engine/cognode.c"/>
+    <File Name="Engine/cognode.h"/>
+    <File Name="Engine/cogrenderer.h"/>
+    <File Name="Engine/cogrendererdeferred.c"/>
+    <File Name="Engine/cogrendererdeferred.h"/>
+    <File Name="Engine/cogrendersystem.c"/>
+    <File Name="Engine/cogrendersystem.h"/>
+    <File Name="Engine/cogrendertarget.h"/>
+    <File Name="Engine/cogresourcemanager.c"/>
+    <File Name="Engine/cogresourcemanager.h"/>
+    <File Name="Engine/cogscene.c"/>
+    <File Name="Engine/cogscene.h"/>
+    <File Name="Engine/cogscenegraph.c"/>
+    <File Name="Engine/cogscenegraph.h"/>
+    <File Name="Engine/cogscenemanager.c"/>
+    <File Name="Engine/cogscenemanager.h"/>
+    <File Name="Engine/cogsurface.c"/>
+    <File Name="Engine/cogsurface.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Json">
+    <File Name="Json/cogjson.c"/>
+    <File Name="Json/cogjson.h"/>
+    <File Name="Json/cogjsonobject.c"/>
+    <File Name="Json/cogjsonobject.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Platform">
+    <File Name="Platform/cogapp.h"/>
+    <File Name="Platform/cogcontroler.h"/>
+    <File Name="Platform/coggl.h"/>
+    <File Name="Platform/cogkeyboard.h"/>
+    <File Name="Platform/coglogger.h"/>
+    <File Name="Platform/cogmouse.h"/>
+    <File Name="Platform/cogmutex.h"/>
+    <File Name="Platform/cogscreen.h"/>
+    <File Name="Platform/cogthread.h"/>
+    <File Name="Platform/cogtimer.h"/>
+    <File Name="Platform/cogwindow.h"/>
+    <VirtualDirectory Name="Linux">
+      <File Name="Platform/Linux/coglogger_linux.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="SDL2">
+      <File Name="Platform/SDL2/cogapp_sdl2.c"/>
+      <File Name="Platform/SDL2/cogplatform_sdl2.c"/>
+      <File Name="Platform/SDL2/cogscreen_sdl2.c"/>
+      <File Name="Platform/SDL2/cogtimer_sdl2.c"/>
+      <File Name="Platform/SDL2/cogwindow_sdl2.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Windows"/>
+    <File Name="Platform/cog.h"/>
+    <File Name="Platform/cogplatform.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Networking">
+    <File Name="Networking/cognetworkmanager.c"/>
+    <File Name="Networking/cognetworkmanager.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Resources">
+    <File Name="Resources/cogaudiosource.c"/>
+    <File Name="Resources/cogaudiosource.h"/>
+    <File Name="Resources/cogfont.c"/>
+    <File Name="Resources/cogfont.h"/>
+    <File Name="Resources/cogimage.c"/>
+    <File Name="Resources/cogimage.h"/>
+    <File Name="Resources/coglight.c"/>
+    <File Name="Resources/coglight.h"/>
+    <File Name="Resources/cogmaterial.c"/>
+    <File Name="Resources/cogmaterial.h"/>
+    <File Name="Resources/cogmesh.c"/>
+    <File Name="Resources/cogmesh.h"/>
+    <File Name="Resources/cogmodel.c"/>
+    <File Name="Resources/cogmodel.h"/>
+    <File Name="Resources/cograwmesh.c"/>
+    <File Name="Resources/cograwmesh.h"/>
+    <File Name="Resources/cogshader.c"/>
+    <File Name="Resources/cogshader.h"/>
+    <File Name="Resources/cogskeleton.c"/>
+    <File Name="Resources/cogskeleton.h"/>
+    <File Name="Resources/cogtexture.c"/>
+    <File Name="Resources/cogtexture.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Math">
+    <File Name="Math/cogbezier2.h"/>
+    <File Name="Math/cogbezier3.h"/>
+    <File Name="Math/cogbox.h"/>
+    <File Name="Math/cogcatmullrom2.c"/>
+    <File Name="Math/cogcatmullrom2.h"/>
+    <File Name="Math/cogcatmullrom3.c"/>
+    <File Name="Math/cogcatmullrom3.h"/>
+    <File Name="Math/cogcircle.h"/>
+    <File Name="Math/cogmath.h"/>
+    <File Name="Math/cogmathutils.c"/>
+    <File Name="Math/cogmathutils.h"/>
+    <File Name="Math/cogmatrix2.c"/>
+    <File Name="Math/cogmatrix2.h"/>
+    <File Name="Math/cogmatrix3.c"/>
+    <File Name="Math/cogmatrix3.h"/>
+    <File Name="Math/cogmatrix4.c"/>
+    <File Name="Math/cogmatrix4.h"/>
+    <File Name="Math/cogquaternion.c"/>
+    <File Name="Math/cogquaternion.h"/>
+    <File Name="Math/cogray2.h"/>
+    <File Name="Math/cogray3.h"/>
+    <File Name="Math/cogrect.h"/>
+    <File Name="Math/cogsphere.h"/>
+    <File Name="Math/cogvector2.c"/>
+    <File Name="Math/cogvector2.h"/>
+    <File Name="Math/cogvector3.c"/>
+    <File Name="Math/cogvector3.h"/>
+    <File Name="Math/cogvector4.c"/>
+    <File Name="Math/cogvector4.h"/>
+  </VirtualDirectory>
+  <Settings Type="Dynamic Library">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="gnu gcc" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g -fPIC -Wall -O0" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="./Math"/>
+        <IncludePath Value="./Core"/>
+        <IncludePath Value="./Engine"/>
+        <IncludePath Value="./Json"/>
+        <IncludePath Value="./Networking"/>
+        <IncludePath Value="./Platform"/>
+        <IncludePath Value="./Resources"/>
+        <Preprocessor Value="HAS_SDL2"/>
+      </Compiler>
+      <Linker Options=" -lGLEW -lSDL2 -lGL -lIL" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName).so" IntermediateDirectory="./../bin/debug" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild>
+        <Command Enabled="yes">[ ! -h ../bin/debug/builtins ] &amp;&amp; ln -s ../../libcog/builtins ../bin/debug/builtins || echo Nothing to be done.</Command>
+      </PostBuild>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Debug - MacOS X" CompilerType="clang" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g -fpic -Wall -O0" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="./include"/>
+        <IncludePath Value="/usr/include/python2.7"/>
+        <Preprocessor Value="HAS_SDL2"/>
+      </Compiler>
+      <Linker Options=" -lGLEW -lIL -framework SDL2 -framework OpenGL -framework Python" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName).dylib" IntermediateDirectory="./../bin/debug" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild>
+        <Command Enabled="yes">cp ../bin/debug/libcog.dylib ../pycog/libcog.dylib</Command>
+      </PostBuild>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Debug - Windows" CompilerType="gnu gcc" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g -Wall -O0" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="./Core"/>
+        <IncludePath Value="./Engine"/>
+        <IncludePath Value="./Math"/>
+        <IncludePath Value="./Json"/>
+        <IncludePath Value="./Networking"/>
+        <IncludePath Value="./Platform"/>
+        <IncludePath Value="./Resources"/>
+        <IncludePath Value="../vendor/Windows/SDL2/include"/>
+        <IncludePath Value="../vendor/Windows/DevIL/include"/>
+        <IncludePath Value="../vendor/Windows/GLEW/include"/>
+        <Preprocessor Value="HAS_SDL2"/>
+        <Preprocessor Value="__WIN32__"/>
+        <Preprocessor Value="GLEW_STATIC"/>
+      </Compiler>
+      <Linker Options="-lSDL2 -lopengl32 -lglew32 -ldevil -lSDL2_mixer -lFLAC-8 -lmodplug-1 -logg-0 -lvorbis-0 -lvorbisfile-3 -lsmpeg2" Required="yes">
+        <LibraryPath Value="../vendor/Windows/SDL2/lib"/>
+        <LibraryPath Value="../vendor/Windows/DevIL/lib"/>
+        <LibraryPath Value="../vendor/Windows/GLEW/lib"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName).dll" IntermediateDirectory="../bin/debug" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild>
+        <Command Enabled="yes">xcopy ..\libcog\builtins ..\bin\debug\builtins /E /Y /I</Command>
+        <Command Enabled="yes">xcopy ..\vendor\Windows\SDL2\lib\SDL2.dll ..\bin\debug /E /Y /I</Command>
+        <Command Enabled="yes">xcopy ..\vendor\Windows\SDL2\lib\SDL2_mixer.dll ..\bin\debug /E /Y /I</Command>
+        <Command Enabled="yes">xcopy ..\vendor\Windows\SDL2\lib\libFLAC-8.dll ..\bin\debug /E /Y /I</Command>
+        <Command Enabled="yes">xcopy ..\vendor\Windows\SDL2\lib\libmodplug-1.dll ..\bin\debug /E /Y /I</Command>
+        <Command Enabled="yes">xcopy ..\vendor\Windows\SDL2\lib\libogg-0.dll ..\bin\debug /E /Y /I</Command>
+        <Command Enabled="yes">xcopy ..\vendor\Windows\SDL2\lib\libvorbis-0.dll ..\bin\debug /E /Y /I</Command>
+        <Command Enabled="yes">xcopy ..\vendor\Windows\SDL2\lib\libvorbisfile-3.dll ..\bin\debug /E /Y /I</Command>
+        <Command Enabled="yes">xcopy ..\vendor\Windows\SDL2\lib\smpeg2.dll ..\bin\debug /E /Y /I</Command>
+        <Command Enabled="yes">xcopy ..\vendor\Windows\GLEW\lib\glew32.dll ..\bin\debug /E /Y /I</Command>
+        <Command Enabled="yes">xcopy ..\vendor\Windows\DevIL\lib\DevIL.dll ..\bin\debug /E /Y /I</Command>
+      </PostBuild>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="clang" DebuggerType="GNU gdb debugger" Type="" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="" C_Options="" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O2" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName).so" IntermediateDirectory="./Release" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+</CodeLite_Project>

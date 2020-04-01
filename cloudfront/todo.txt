@@ -1,0 +1,84 @@
+
+  *==========================*
+  *=| Cloudfront RP System |=*
+  *==========================*
+  
+    Minimiziranje stvari za pokusni run
+  
+    Karte:
+      Karte u 5 boja: 
+        White[W], 
+        Blue[U], 
+        Green[G], 
+        Red[R], 
+        Black[B],
+        Gray[A]
+    
+      Tipovi:
+        Action[Act], 
+        Race[Rac], 
+        Class[Cls], 
+        Item[Itm], 
+        Equipment[Equ]
+        
+      Action:
+        Attack
+        Cry
+        Spell
+        Chant
+      
+      Race:
+        Human
+        Elf
+        Dwarf
+        Goblin
+        Orc
+        
+      Class:
+        Fighter
+        Rogue
+        Mage
+        Priest
+        
+      Item:
+        Potion
+        Scroll
+      
+      Equipment:
+        Weapon
+        Armor
+        Helmet
+
+  *=====================*
+  *=| Character Sheet |=*
+  *=====================*
+  
+    Base Sheet
+    
+      Name: _______________
+      Rank: _______________
+      
+      Wounds:  __/__
+      Fatigue: __/__
+      
+      Race:  [ ]
+      Class: [ ]
+      Items: 
+        Belt: [ ][ ]
+        Backpack [ ][ ][ ][ ][ ][ ]
+      Equipment:
+        Head:   [ ]
+        Armor:  [ ]
+        Weapons: 
+          Offensive: [ ][ ]
+          Defensive: [ ][ ]
+      Actions:
+        Attack: [ ][ ][ ]
+        Cries:  [ ][ ][ ]
+        Spells: [ ][ ][ ]
+        Chants: [ ][ ][ ]
+        
+        
+      
+  
+  

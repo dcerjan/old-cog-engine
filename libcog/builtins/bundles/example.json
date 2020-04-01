@@ -1,0 +1,123 @@
+/* Example bundle file */
+{
+  "name": "Example Bundle",  
+  "resources": {
+    "shaders": [
+      {
+        "name": "Surface Shader",
+        "vertex": "./builtins/shaders/common/blit.vs.glsl",
+        "fragment": "./builtins/shaders/common/blit.fs.glsl"
+      },
+      {
+        "name": "Diffuse Shader",
+        "vertex": "./builtins/shaders/DiffuseShader.vs.glsl",
+        "fragment": "./builtins/shaders/DiffuseShader.fs.glsl"
+      },
+      {
+        "name": "Deferred Shader",
+        "vertex": "./builtins/shaders/DeferredShader.vs.glsl",
+        "fragment": "./builtins/shaders/DeferredShader.fs.glsl"
+      },
+      {
+        "name": "Deferred Compose",
+        "vertex": "./builtins/shaders/BlitShader.vs.glsl",
+        "fragment": "./builtins/shaders/DeferredCompose.fs.glsl"
+      },
+      // dbg shaders
+      {
+        "name": "Deferred Position",
+        "vertex": "./builtins/shaders/BlitShader.vs.glsl",
+        "fragment": "./builtins/shaders/DbgDeferredRenderPosition.fs.glsl"
+      },
+      {
+        "name": "Deferred Depth",
+        "vertex": "./builtins/shaders/BlitShader.vs.glsl",
+        "fragment": "./builtins/shaders/DbgDeferredRenderDepth.fs.glsl"
+      },
+      {
+        "name": "Deferred Normal",
+        "vertex": "./builtins/shaders/BlitShader.vs.glsl",
+        "fragment": "./builtins/shaders/DbgDeferredRenderNormal.fs.glsl"
+      },
+      {
+        "name": "Deferred Color",
+        "vertex": "./builtins/shaders/BlitShader.vs.glsl",
+        "fragment": "./builtins/shaders/DbgDeferredRenderColor.fs.glsl"
+      },
+      
+      {
+        "name": "Blit Shader",
+        "vertex": "./builtins/shaders/BlitShader.vs.glsl",
+        "fragment": "./builtins/shaders/BlitShader.fs.glsl"
+      }
+    ],
+    
+    "images": [
+      {
+        "name": "Gimp Image",
+        "source": "./builtins/images/gimp.png"
+      },
+      {
+        "name": "Blender Image",
+        "source": "./builtins/images/blender.png"
+      }
+    ],
+    
+    "textures": [
+      {
+        "name": "Example Texture",
+        "source": "./builtins/textures/example.png"
+      },
+      {
+        "name": "Example Normal Map",
+        "source": "./builtins/textures/normal_map.png"
+      }
+    ],
+    
+    "meshes": [
+      {
+        "name": "Plane",
+        "method": "triangle strip",
+        "buffers": [
+          {
+            "dimension": 2,
+            "data": [
+              -1.0, -1.0,
+              -1.0,  1.0,
+               1.0, -1.0,
+               1.0,  1.0
+            ]
+          },
+          {
+            "dimension": 2,
+            "data": [
+               0.0,  0.0,
+               0.0,  1.0,
+               1.0,  0.0,
+               1.0,  1.0
+            ]
+          }
+        ]
+      },
+      "./builtins/meshes/plane.bundle"
+    ],
+    
+    "materials": [
+      {
+        "name": "Surface Material",
+        "samplers": ["Example Texture"],
+        "shader": "Surface Shader"
+      },
+      "./builtins/materials/surface.bundle"
+    ],
+    
+    "models": [
+      {
+        "name": "Surface",
+        "mesh": "Plane",
+        "material": "Surface Material"
+      },
+      "./builtins/models/surface.bundle"
+    ]
+  }
+}

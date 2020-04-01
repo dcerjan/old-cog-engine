@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="cog" Database="./cog.tags">
+  <Project Name="libcog" Path="libcog/libcog.project" Active="No"/>
+  <Project Name="examples" Path="examples/examples.project" Active="Yes"/>
+  <Project Name="tests" Path="tests/tests.project"/>
+  <Project Name="cloudfront" Path="cloudfront/cloudfront.project" Active="No"/>
+  <Project Name="example_server" Path="example_server/example_server.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="no">
+      <Project Name="libcog" ConfigName="Debug"/>
+      <Project Name="examples" ConfigName="Debug"/>
+      <Project Name="tests" ConfigName="Debug"/>
+      <Project Name="cloudfront" ConfigName="Debug"/>
+      <Project Name="example_server" ConfigName="Debug"/>
+      <Project Name="rbtree" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="no">
+      <Project Name="libcog" ConfigName="Release"/>
+      <Project Name="examples" ConfigName="Release"/>
+      <Project Name="tests" ConfigName="Release"/>
+      <Project Name="cloudfront" ConfigName="Release"/>
+      <Project Name="example_server" ConfigName="Release"/>
+      <Project Name="rbtree" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Debug - Windows" Selected="yes">
+      <Project Name="cloudfront" ConfigName="Debug"/>
+      <Project Name="example_server" ConfigName="Debug"/>
+      <Project Name="examples" ConfigName="Debug - Windows"/>
+      <Project Name="libcog" ConfigName="Debug - Windows"/>
+      <Project Name="tests" ConfigName="Debug"/>
+      <Project Name="rbtree" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Debug - MacOS X" Selected="yes">
+      <Project Name="tests" ConfigName="Debug"/>
+      <Project Name="libcog" ConfigName="Debug - MacOS X"/>
+      <Project Name="examples" ConfigName="Debug"/>
+      <Project Name="example_server" ConfigName="Debug"/>
+      <Project Name="cloudfront" ConfigName="Debug"/>
+      <Project Name="rbtree" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

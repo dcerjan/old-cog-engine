@@ -1,0 +1,118 @@
+// Example of a scene containing all cog data
+{
+  scene: {
+    name: "example scene",
+    resources: {
+      group: {
+        name: "example resource group",
+        persistant: true,
+        data: [
+          { texture: "textures/skybox.png" },
+          { texture: "textures/brick_wall.png" },
+          { texture: "textures/cog_logo_512.png" },
+          { shader: { name: "material/diffuse mapping", stages: { vertex: "shaders/diffuse.vs.glsl", fragment: "shaders/difuse.fs.glsl" }}},
+          { shader: { name: "postprocess/bloom", stages: { vertex: "shaders/surface.vs.glsl", fragment: "shaders/bloom.fs.glsl" }}},
+          { mesh:  "meshes/box.mesh" },
+          { material: { name: "skybox", textures: ["textures/skybox.png"], shader: "material/diffuse mapping", depth_writes: false }},
+          { material: { name: "box model", textures: ["textures/skybox.png"], shader: "material/diffuse mapping" }},
+          { material: { name: "bloom", shader: "postprocess/bloom" }},
+          { light: { name: "light", type: "point", color: { r: 0.3, g: 0.3, b: 0.7, a: 1.0 }, attenuation: { constant: 1.0, linear: 0.3, quadratic: 0.4 }}},
+          { camera: { name: "example camera", fovy: 75.0, width: 800, height: 600 }},
+          { model: { name: "box", mesh: "meshes/box", material: "box model" }},
+          { model: { name: "skybox", mesh: { builtin: "skybox", size: { x: 10, y: 10, z: 10 }}, material: "skybox"}}
+        ]
+      }
+    },
+    graph: {
+      root: {
+        name: "root"
+        children: [ 
+          {
+            name: "camera yaw",
+            position: { x: 0, y: 2, z: 4 },
+            models: ["skybox"],
+            children: [ 
+              {
+                name: "camera pitch",
+                cameras: ["example camera"]
+              }
+            ]
+          }, 
+          {
+            name: "light node",
+            position: { x: 2, y: 3, z: 2 },
+            lights: ["light"]
+          }, 
+          {
+            name: "box node",
+            models: ["box model"]
+          }
+        ]
+      }
+    },
+    renderer: {
+      name: "default forward",
+      type: "forward",
+      framebuffers: [ 
+        {
+          name: "main",
+          size: { width: 800, height: 600 },
+          rendertargets: [ {
+              name: "main"
+              format: "RGBA", internal: "RGBA8"
+            }, 
+            {
+              name: "pingpong"
+              format: "RGBA", internal: "RGBA8"
+            },
+            {
+              name: "bloom"
+              format: "RGBA", internal: "RGBA8"
+            }
+          ]
+        }
+      ],
+      preprocess: [ 
+        {
+          root: "root",
+          rendertarget: { framebuffer: "main", rendertarget: "main" },
+          shader: null // this means that the full rendering pipeline should be used to produce this render, no overides should be used for shaders
+        }
+      ],
+      postprocess: [ 
+        {
+          passes: [
+            {
+              source: [{ framebuffer: "main", rendertarget: "main" }],
+              destination { framebuffer: "main", rendertarget: "pingpong" },
+              shader: "postprocess/gaussian_blur",
+            },
+            {
+              source: [{ framebuffer: "main", redertarget: "pingpong" }],
+              destination { framebuffer: "main", rendertarget: "bloom" },
+              shader: "postprocess/gausian_blur"
+            },
+            {
+              source: [{ framebuffer: "main", redertarget: "main" }, { framebuffer: "main", redertarget: "bloom" }],
+              destination { framebuffer: "main", rendertarget: "main" },
+              shader: "postprocess/compositor"
+              
+              shader: {
+                src: [],
+                dst: [],
+                args: {
+                  textures: [],
+                  factors: [],
+                  flags: [],
+                  matrices: [],
+                  vectors: [],
+                  colors: []
+                }
+              }
+            }
+          ]
+        }
+      ],
+    }
+  }
+}

@@ -1,0 +1,79 @@
+## Renderer Specifications
+{
+  "Forward Deferred": {
+    "config": [
+      {
+        "fbo": {
+          "name": "main fbo",
+          "size": [1920, 1080],
+          "scale": [0.5, 1.0],
+          "rts": [
+            {
+              "attachment": "depth",
+              "format": {
+                "type": "depth",
+                "bpp": "32FP"
+              }
+            },
+            {
+              ## Color0 Attachment Specs:
+              ## RGBA 16 FP (4-channels half per pixel)
+              ## R,G,B coresponds to X,Y,Z
+              ## -Z * linearDepthconstant equals to depth, since Z is distance from the near frustum clipping plane
+              ## A channel reserved for height displacement samppled from a depth map
+              "attachment": "color0",
+              "format": {
+                "type": "tex2d",
+                "bpp": "16FP"
+              }
+            },
+            {
+              ## Color1 Attachment Specs:
+              ## RGBA 8 (4-channels byte per pixel)
+              ## R,G coresponds to X,Y of a normal (Z = sqrt(1.0f - (X^2 + Y^2)))
+              ## B channel is reserved for specular hardness
+              ## A channel is reserved for specular intensity
+              "attachment": "color0",
+              "format": {
+                "type": "tex2d",
+                "bpp": "8"
+              }
+            },
+            {
+              ## Color2 Attachment Specs:
+              ## RGBA 8 (4-channels byte per pixel)
+              ## R,G,B coresponds to RGB of a samppled diffuse texture
+              ## A channel is reserved for diffuse intensity
+              "attachment": "color2",
+              "format": {
+                "type": "tex2d",
+                "bpp": "8"
+              }
+            }
+          ]
+        },
+        "fbo": {
+          "name": "shadowmap fbo",
+          "size":  [2048, 2048],
+          "scale": [0.5, 1.0],
+          "rts": [
+            {
+              "attachment": "depth",
+              "format": {
+                "type": "depth",
+                "bpp": "32FP"
+              }
+            },
+            {
+              "attachment": "color0",
+              "format": {
+                "type": "shadow",
+                "bpp": "32FP"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

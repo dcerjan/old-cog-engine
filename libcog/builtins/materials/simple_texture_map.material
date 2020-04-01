@@ -1,0 +1,13 @@
+{
+  // simple texture map material
+  "material": {
+    "name" : "SimpleTextureMap",
+    "inputs" : {
+      "textures" : ["textures/checkers.png"],
+      "shader" : { 
+        "vertex":     "shaders/surface.vs.glsl",
+        "fragment":   "shaders/surface.fs.glsl"
+      }
+    }
+  }
+}

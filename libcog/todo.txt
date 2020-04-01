@@ -1,0 +1,130 @@
+  *============================================*
+  *=| Preslagivanje Direktorija source fajli |=*
+  *============================================*
+  
+    *
+
+
+
+  *=====================*
+  *=| Renderer Rework |=*
+  *=====================*
+  
+    * Lighting
+      * area
+      
+    * projectors
+      
+    * shadows
+      * vsm
+      * noisy pcf
+      * cascaded
+      
+    * lightmaps
+
+  *===========*
+  *=| Input |=*
+  *===========*
+  
+  * Mouse
+    * Scroll
+  * Controllers
+
+  *================*
+  *=| Networking |=*
+  *================*
+  
+  NetworkManagerInit()
+  Connection conn = NetworkManagerConnect((AddressIPv4){127,0,0,1,9001});
+  Bool ConnectionIsReady(const Connection self);
+  
+  *=========================*
+  *=| Resursi i managment |=*
+  *=========================*
+  
+  Svaki resurs se mora znat loudat iz json-a i serijalizirat u json
+  Moguće reprezentacije unutar jsona:
+    Sirovi podatci
+    String sa putanjom do sirovog resursa
+    Url sa putanjom do sirovog resursa (okida flag da je resurs uloudan nakon uloudavanja i parsanja)
+    
+  *=================*
+  *=| Json parser |=*
+  *=================*
+  
+  proširenje: "_data": x[binary data], 
+              x[] sadrži binarne podatke unutar []
+
+  *===========*
+  *=| Utils |=*
+  *===========*
+    Array, List, Hash
+      maknut type isntance varijablu: 
+        (thnx to wolf) -> typeof(*self->data)
+      
+    Primitive:
+      Box
+      Sphere
+      Torus
+      Capsule
+      
+    Gizmo:
+      AxisGizmo
+      CameraGizmo
+      NodeGizmo
+      LightGizmo
+      ParticleEmitterGizmo
+      
+    Fallback Shader-i za svaki renderer
+      -> farba geometriju u zeleno
+      
+      
+  TODO:
+  
+  /*****************************************************/
+  CogMath:
+    Quaternion
+      konverzije iz/u matrice (Quaternion <-> Matrix3/4)
+      
+  
+  /*****************************************************/
+  CogGraphics:
+    SceneGraph
+      Node
+        Quaternion umjesto Matrix4 rotacijske matrice
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

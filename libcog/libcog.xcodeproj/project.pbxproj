@@ -1,0 +1,937 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC8E39D9185E210E00196EE2 /* cogstring.c in Sources */ = {isa = PBXBuildFile; fileRef = CC8E39D8185E210E00196EE2 /* cogstring.c */; };
+		CC8E39DF185E214300196EE2 /* cogarray.h in Headers */ = {isa = PBXBuildFile; fileRef = CC8E39DA185E214300196EE2 /* cogarray.h */; };
+		CC8E39E0185E214300196EE2 /* coghash.h in Headers */ = {isa = PBXBuildFile; fileRef = CC8E39DB185E214300196EE2 /* coghash.h */; };
+		CC8E39E1185E214300196EE2 /* coglist.h in Headers */ = {isa = PBXBuildFile; fileRef = CC8E39DC185E214300196EE2 /* coglist.h */; };
+		CC8E39E2185E214300196EE2 /* cogstring.h in Headers */ = {isa = PBXBuildFile; fileRef = CC8E39DD185E214300196EE2 /* cogstring.h */; };
+		CC8E39E3185E214300196EE2 /* cogtypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CC8E39DE185E214300196EE2 /* cogtypes.h */; };
+		CC9E241F18747A49007226FB /* cogjson.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E241D18747A49007226FB /* cogjson.h */; };
+		CC9E242018747A49007226FB /* cogjsonobject.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E241E18747A49007226FB /* cogjsonobject.h */; };
+		CC9E242318747A56007226FB /* cogjson.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E242118747A56007226FB /* cogjson.c */; };
+		CC9E242418747A56007226FB /* cogjsonobject.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E242218747A56007226FB /* cogjsonobject.c */; };
+		CC9E243918747AA2007226FB /* cogbezier2.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E242818747AA2007226FB /* cogbezier2.h */; };
+		CC9E243A18747AA2007226FB /* cogbezier3.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E242918747AA2007226FB /* cogbezier3.h */; };
+		CC9E243B18747AA2007226FB /* cogbox.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E242A18747AA2007226FB /* cogbox.h */; };
+		CC9E243C18747AA2007226FB /* cogcatmullrom2.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E242B18747AA2007226FB /* cogcatmullrom2.h */; };
+		CC9E243D18747AA2007226FB /* cogcatmullrom3.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E242C18747AA2007226FB /* cogcatmullrom3.h */; };
+		CC9E243E18747AA2007226FB /* cogcircle.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E242D18747AA2007226FB /* cogcircle.h */; };
+		CC9E243F18747AA2007226FB /* cogmath.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E242E18747AA2007226FB /* cogmath.h */; };
+		CC9E244018747AA2007226FB /* cogmatrix2.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E242F18747AA2007226FB /* cogmatrix2.h */; };
+		CC9E244118747AA2007226FB /* cogmatrix3.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E243018747AA2007226FB /* cogmatrix3.h */; };
+		CC9E244218747AA2007226FB /* cogmatrix4.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E243118747AA2007226FB /* cogmatrix4.h */; };
+		CC9E244318747AA2007226FB /* cogquaternion.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E243218747AA2007226FB /* cogquaternion.h */; };
+		CC9E244418747AA2007226FB /* cogray2.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E243318747AA2007226FB /* cogray2.h */; };
+		CC9E244518747AA2007226FB /* cogray3.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E243418747AA2007226FB /* cogray3.h */; };
+		CC9E244618747AA2007226FB /* cogrect.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E243518747AA2007226FB /* cogrect.h */; };
+		CC9E244718747AA2007226FB /* cogvector2.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E243618747AA2007226FB /* cogvector2.h */; };
+		CC9E244818747AA2007226FB /* cogvector3.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E243718747AA2007226FB /* cogvector3.h */; };
+		CC9E244918747AA2007226FB /* cogvector4.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E243818747AA2007226FB /* cogvector4.h */; };
+		CC9E245318747ACB007226FB /* cogcatmullrom2.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E244A18747ACB007226FB /* cogcatmullrom2.c */; };
+		CC9E245418747ACB007226FB /* cogcatmullrom3.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E244B18747ACB007226FB /* cogcatmullrom3.c */; };
+		CC9E245518747ACB007226FB /* cogmatrix2.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E244C18747ACB007226FB /* cogmatrix2.c */; };
+		CC9E245618747ACB007226FB /* cogmatrix3.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E244D18747ACB007226FB /* cogmatrix3.c */; };
+		CC9E245718747ACB007226FB /* cogmatrix4.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E244E18747ACB007226FB /* cogmatrix4.c */; };
+		CC9E245818747ACB007226FB /* cogquaternion.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E244F18747ACB007226FB /* cogquaternion.c */; };
+		CC9E245918747ACB007226FB /* cogvector2.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E245018747ACB007226FB /* cogvector2.c */; };
+		CC9E245A18747ACB007226FB /* cogvector3.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E245118747ACB007226FB /* cogvector3.c */; };
+		CC9E245B18747ACB007226FB /* cogvector4.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E245218747ACB007226FB /* cogvector4.c */; };
+		CC9E246818747B08007226FB /* cogcontroler.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E245E18747B08007226FB /* cogcontroler.h */; };
+		CC9E246918747B08007226FB /* coggl.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E245F18747B08007226FB /* coggl.h */; };
+		CC9E246A18747B08007226FB /* cogkeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E246018747B08007226FB /* cogkeyboard.h */; };
+		CC9E246B18747B08007226FB /* coglogger.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E246118747B08007226FB /* coglogger.h */; };
+		CC9E246C18747B08007226FB /* cogmouse.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E246218747B08007226FB /* cogmouse.h */; };
+		CC9E246D18747B08007226FB /* cogmutex.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E246318747B08007226FB /* cogmutex.h */; };
+		CC9E246E18747B08007226FB /* cogscreen.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E246418747B08007226FB /* cogscreen.h */; };
+		CC9E246F18747B08007226FB /* cogthread.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E246518747B08007226FB /* cogthread.h */; };
+		CC9E247018747B08007226FB /* cogtimer.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E246618747B08007226FB /* cogtimer.h */; };
+		CC9E247118747B08007226FB /* cogwindow.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E246718747B08007226FB /* cogwindow.h */; };
+		CC9E247718747B25007226FB /* cogapp_sdl2.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E247218747B25007226FB /* cogapp_sdl2.c */; };
+		CC9E247818747B25007226FB /* cogplatform_sdl2.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E247318747B25007226FB /* cogplatform_sdl2.c */; };
+		CC9E247918747B25007226FB /* cogscreen_sdl2.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E247418747B25007226FB /* cogscreen_sdl2.c */; };
+		CC9E247A18747B25007226FB /* cogtimer_sdl2.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E247518747B25007226FB /* cogtimer_sdl2.c */; };
+		CC9E247B18747B25007226FB /* cogwindow_sdl2.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E247618747B25007226FB /* cogwindow_sdl2.c */; };
+		CC9E247D18747B31007226FB /* coglogger_linux.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E247C18747B31007226FB /* coglogger_linux.c */; };
+		CC9E248B18747B67007226FB /* cogaudiosource.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E248018747B67007226FB /* cogaudiosource.h */; };
+		CC9E248C18747B67007226FB /* cogfont.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E248118747B67007226FB /* cogfont.h */; };
+		CC9E248D18747B67007226FB /* cogimage.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E248218747B67007226FB /* cogimage.h */; };
+		CC9E248E18747B67007226FB /* cogimageformat.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E248318747B67007226FB /* cogimageformat.h */; };
+		CC9E248F18747B67007226FB /* coglight.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E248418747B67007226FB /* coglight.h */; };
+		CC9E249018747B67007226FB /* cogmaterial.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E248518747B67007226FB /* cogmaterial.h */; };
+		CC9E249118747B67007226FB /* cogmesh.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E248618747B67007226FB /* cogmesh.h */; };
+		CC9E249218747B67007226FB /* cogmodel.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E248718747B67007226FB /* cogmodel.h */; };
+		CC9E249318747B67007226FB /* cogshader.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E248818747B67007226FB /* cogshader.h */; };
+		CC9E249418747B67007226FB /* cogskeleton.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E248918747B67007226FB /* cogskeleton.h */; };
+		CC9E249518747B67007226FB /* cogtexture.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E248A18747B67007226FB /* cogtexture.h */; };
+		CC9E249F18747B7F007226FB /* cogaudiosource.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E249618747B7F007226FB /* cogaudiosource.c */; };
+		CC9E24A018747B7F007226FB /* cogfont.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E249718747B7F007226FB /* cogfont.c */; };
+		CC9E24A118747B7F007226FB /* cogimage.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E249818747B7F007226FB /* cogimage.c */; };
+		CC9E24A218747B7F007226FB /* coglight.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E249918747B7F007226FB /* coglight.c */; };
+		CC9E24A318747B7F007226FB /* cogmaterial.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E249A18747B7F007226FB /* cogmaterial.c */; };
+		CC9E24A418747B7F007226FB /* cogmesh.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E249B18747B7F007226FB /* cogmesh.c */; };
+		CC9E24A518747B7F007226FB /* cogmodel.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E249C18747B7F007226FB /* cogmodel.c */; };
+		CC9E24A618747B7F007226FB /* cogskeleton.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E249D18747B7F007226FB /* cogskeleton.c */; };
+		CC9E24A718747B7F007226FB /* cogtexture.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E249E18747B7F007226FB /* cogtexture.c */; };
+		CC9E24AD18747BA1007226FB /* cogbundle.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24AA18747BA1007226FB /* cogbundle.h */; };
+		CC9E24AE18747BA1007226FB /* cogresourcemanager.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24AB18747BA1007226FB /* cogresourcemanager.h */; };
+		CC9E24AF18747BA1007226FB /* cogscenemanager.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24AC18747BA1007226FB /* cogscenemanager.h */; };
+		CC9E24B318747BB5007226FB /* cogbundle.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E24B018747BB5007226FB /* cogbundle.c */; };
+		CC9E24B418747BB5007226FB /* cogresourcemanager.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E24B118747BB5007226FB /* cogresourcemanager.c */; };
+		CC9E24B518747BB5007226FB /* cogscenemanager.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E24B218747BB5007226FB /* cogscenemanager.c */; };
+		CC9E24B718747BC9007226FB /* cogsphere.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24B618747BC9007226FB /* cogsphere.h */; };
+		CC9E24BC18747BE1007226FB /* libcog_init_modules.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24BA18747BE1007226FB /* libcog_init_modules.h */; };
+		CC9E24BD18747BE1007226FB /* libcog_math_vector2.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24BB18747BE1007226FB /* libcog_math_vector2.h */; };
+		CC9E24C018747BED007226FB /* libcog_init_modules.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E24BE18747BED007226FB /* libcog_init_modules.c */; };
+		CC9E24C118747BED007226FB /* libcog_math_vector2.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E24BF18747BED007226FB /* libcog_math_vector2.c */; };
+		CC9E24D218747C1A007226FB /* cogcamera.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24C418747C1A007226FB /* cogcamera.h */; };
+		CC9E24D318747C1A007226FB /* cogcolor.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24C518747C1A007226FB /* cogcolor.h */; };
+		CC9E24D418747C1A007226FB /* cogframebuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24C618747C1A007226FB /* cogframebuffer.h */; };
+		CC9E24D518747C1A007226FB /* coggizmo.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24C718747C1A007226FB /* coggizmo.h */; };
+		CC9E24D618747C1A007226FB /* coggraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24C818747C1A007226FB /* coggraphics.h */; };
+		CC9E24D718747C1A007226FB /* cognode.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24C918747C1A007226FB /* cognode.h */; };
+		CC9E24D818747C1A007226FB /* cogrenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24CA18747C1A007226FB /* cogrenderer.h */; };
+		CC9E24D918747C1A007226FB /* cogrendererdeferred.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24CB18747C1A007226FB /* cogrendererdeferred.h */; };
+		CC9E24DA18747C1A007226FB /* cogrendererforward.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24CC18747C1A007226FB /* cogrendererforward.h */; };
+		CC9E24DB18747C1A007226FB /* cogrendersystem.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24CD18747C1A007226FB /* cogrendersystem.h */; };
+		CC9E24DC18747C1A007226FB /* cogrendertarget.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24CE18747C1A007226FB /* cogrendertarget.h */; };
+		CC9E24DD18747C1A007226FB /* cogscene.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24CF18747C1A007226FB /* cogscene.h */; };
+		CC9E24DE18747C1A007226FB /* cogscenegraph.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24D018747C1A007226FB /* cogscenegraph.h */; };
+		CC9E24DF18747C1A007226FB /* cogsurface.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24D118747C1A007226FB /* cogsurface.h */; };
+		CC9E24E118747C28007226FB /* cogplatform.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24E018747C28007226FB /* cogplatform.h */; };
+		CC9E24EA18747C3F007226FB /* cogcamera.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E24E218747C3F007226FB /* cogcamera.c */; };
+		CC9E24EB18747C3F007226FB /* cognode.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E24E318747C3F007226FB /* cognode.c */; };
+		CC9E24EC18747C3F007226FB /* cogramebuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E24E418747C3F007226FB /* cogramebuffer.c */; };
+		CC9E24ED18747C3F007226FB /* cogrendererforward.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E24E518747C3F007226FB /* cogrendererforward.c */; };
+		CC9E24EE18747C3F007226FB /* cogrendersystem.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E24E618747C3F007226FB /* cogrendersystem.c */; };
+		CC9E24EF18747C3F007226FB /* cogscene.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E24E718747C3F007226FB /* cogscene.c */; };
+		CC9E24F018747C3F007226FB /* cogscenegraph.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E24E818747C3F007226FB /* cogscenegraph.c */; };
+		CC9E24F118747C3F007226FB /* cogsurface.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E24E918747C3F007226FB /* cogsurface.c */; };
+		CC9E24F318747C4B007226FB /* cogshader.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E24F218747C4B007226FB /* cogshader.c */; };
+		CC9E24F918747C6F007226FB /* cog.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24F618747C6F007226FB /* cog.h */; };
+		CC9E24FA18747C6F007226FB /* cogapp.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24F718747C6F007226FB /* cogapp.h */; };
+		CC9E24FB18747C6F007226FB /* coggc.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E24F818747C6F007226FB /* coggc.h */; };
+		CC9E24FE18747C79007226FB /* cog.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E24FC18747C79007226FB /* cog.c */; };
+		CC9E24FF18747C79007226FB /* coggc.c in Sources */ = {isa = PBXBuildFile; fileRef = CC9E24FD18747C79007226FB /* coggc.c */; };
+		CC9E250118747F33007226FB /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9E250018747F33007226FB /* SDL2.framework */; };
+		CC9E250318747F39007226FB /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9E250218747F39007226FB /* Python.framework */; };
+		CC9E250518747F7F007226FB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9E250418747F7F007226FB /* OpenGL.framework */; };
+		CC9E250718747F85007226FB /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9E250618747F85007226FB /* OpenAL.framework */; };
+		CC9E2509187480A3007226FB /* libIL.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9E2508187480A3007226FB /* libIL.1.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CC8E39CD185E1FA500196EE2 /* liblibcog.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = liblibcog.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC8E39D8185E210E00196EE2 /* cogstring.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; name = cogstring.c; path = src/cogstring.c; sourceTree = "<group>"; };
+		CC8E39DA185E214300196EE2 /* cogarray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogarray.h; path = include/cogarray.h; sourceTree = "<group>"; };
+		CC8E39DB185E214300196EE2 /* coghash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coghash.h; path = include/coghash.h; sourceTree = "<group>"; };
+		CC8E39DC185E214300196EE2 /* coglist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coglist.h; path = include/coglist.h; sourceTree = "<group>"; };
+		CC8E39DD185E214300196EE2 /* cogstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogstring.h; path = include/cogstring.h; sourceTree = "<group>"; };
+		CC8E39DE185E214300196EE2 /* cogtypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogtypes.h; path = include/cogtypes.h; sourceTree = "<group>"; };
+		CC9E241D18747A49007226FB /* cogjson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogjson.h; path = include/cogjson.h; sourceTree = "<group>"; };
+		CC9E241E18747A49007226FB /* cogjsonobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogjsonobject.h; path = include/cogjsonobject.h; sourceTree = "<group>"; };
+		CC9E242118747A56007226FB /* cogjson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogjson.c; path = src/cogjson.c; sourceTree = "<group>"; };
+		CC9E242218747A56007226FB /* cogjsonobject.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogjsonobject.c; path = src/cogjsonobject.c; sourceTree = "<group>"; };
+		CC9E242818747AA2007226FB /* cogbezier2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogbezier2.h; path = include/cogbezier2.h; sourceTree = "<group>"; };
+		CC9E242918747AA2007226FB /* cogbezier3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogbezier3.h; path = include/cogbezier3.h; sourceTree = "<group>"; };
+		CC9E242A18747AA2007226FB /* cogbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogbox.h; path = include/cogbox.h; sourceTree = "<group>"; };
+		CC9E242B18747AA2007226FB /* cogcatmullrom2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogcatmullrom2.h; path = include/cogcatmullrom2.h; sourceTree = "<group>"; };
+		CC9E242C18747AA2007226FB /* cogcatmullrom3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogcatmullrom3.h; path = include/cogcatmullrom3.h; sourceTree = "<group>"; };
+		CC9E242D18747AA2007226FB /* cogcircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogcircle.h; path = include/cogcircle.h; sourceTree = "<group>"; };
+		CC9E242E18747AA2007226FB /* cogmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogmath.h; path = include/cogmath.h; sourceTree = "<group>"; };
+		CC9E242F18747AA2007226FB /* cogmatrix2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogmatrix2.h; path = include/cogmatrix2.h; sourceTree = "<group>"; };
+		CC9E243018747AA2007226FB /* cogmatrix3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogmatrix3.h; path = include/cogmatrix3.h; sourceTree = "<group>"; };
+		CC9E243118747AA2007226FB /* cogmatrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogmatrix4.h; path = include/cogmatrix4.h; sourceTree = "<group>"; };
+		CC9E243218747AA2007226FB /* cogquaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogquaternion.h; path = include/cogquaternion.h; sourceTree = "<group>"; };
+		CC9E243318747AA2007226FB /* cogray2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogray2.h; path = include/cogray2.h; sourceTree = "<group>"; };
+		CC9E243418747AA2007226FB /* cogray3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogray3.h; path = include/cogray3.h; sourceTree = "<group>"; };
+		CC9E243518747AA2007226FB /* cogrect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogrect.h; path = include/cogrect.h; sourceTree = "<group>"; };
+		CC9E243618747AA2007226FB /* cogvector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogvector2.h; path = include/cogvector2.h; sourceTree = "<group>"; };
+		CC9E243718747AA2007226FB /* cogvector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogvector3.h; path = include/cogvector3.h; sourceTree = "<group>"; };
+		CC9E243818747AA2007226FB /* cogvector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogvector4.h; path = include/cogvector4.h; sourceTree = "<group>"; };
+		CC9E244A18747ACB007226FB /* cogcatmullrom2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogcatmullrom2.c; path = src/cogcatmullrom2.c; sourceTree = "<group>"; };
+		CC9E244B18747ACB007226FB /* cogcatmullrom3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogcatmullrom3.c; path = src/cogcatmullrom3.c; sourceTree = "<group>"; };
+		CC9E244C18747ACB007226FB /* cogmatrix2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogmatrix2.c; path = src/cogmatrix2.c; sourceTree = "<group>"; };
+		CC9E244D18747ACB007226FB /* cogmatrix3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogmatrix3.c; path = src/cogmatrix3.c; sourceTree = "<group>"; };
+		CC9E244E18747ACB007226FB /* cogmatrix4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogmatrix4.c; path = src/cogmatrix4.c; sourceTree = "<group>"; };
+		CC9E244F18747ACB007226FB /* cogquaternion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogquaternion.c; path = src/cogquaternion.c; sourceTree = "<group>"; };
+		CC9E245018747ACB007226FB /* cogvector2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogvector2.c; path = src/cogvector2.c; sourceTree = "<group>"; };
+		CC9E245118747ACB007226FB /* cogvector3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogvector3.c; path = src/cogvector3.c; sourceTree = "<group>"; };
+		CC9E245218747ACB007226FB /* cogvector4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogvector4.c; path = src/cogvector4.c; sourceTree = "<group>"; };
+		CC9E245E18747B08007226FB /* cogcontroler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogcontroler.h; path = include/cogcontroler.h; sourceTree = "<group>"; };
+		CC9E245F18747B08007226FB /* coggl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coggl.h; path = include/coggl.h; sourceTree = "<group>"; };
+		CC9E246018747B08007226FB /* cogkeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogkeyboard.h; path = include/cogkeyboard.h; sourceTree = "<group>"; };
+		CC9E246118747B08007226FB /* coglogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coglogger.h; path = include/coglogger.h; sourceTree = "<group>"; };
+		CC9E246218747B08007226FB /* cogmouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogmouse.h; path = include/cogmouse.h; sourceTree = "<group>"; };
+		CC9E246318747B08007226FB /* cogmutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogmutex.h; path = include/cogmutex.h; sourceTree = "<group>"; };
+		CC9E246418747B08007226FB /* cogscreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogscreen.h; path = include/cogscreen.h; sourceTree = "<group>"; };
+		CC9E246518747B08007226FB /* cogthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogthread.h; path = include/cogthread.h; sourceTree = "<group>"; };
+		CC9E246618747B08007226FB /* cogtimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogtimer.h; path = include/cogtimer.h; sourceTree = "<group>"; };
+		CC9E246718747B08007226FB /* cogwindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogwindow.h; path = include/cogwindow.h; sourceTree = "<group>"; };
+		CC9E247218747B25007226FB /* cogapp_sdl2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogapp_sdl2.c; path = src/sdl2/cogapp_sdl2.c; sourceTree = "<group>"; };
+		CC9E247318747B25007226FB /* cogplatform_sdl2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogplatform_sdl2.c; path = src/sdl2/cogplatform_sdl2.c; sourceTree = "<group>"; };
+		CC9E247418747B25007226FB /* cogscreen_sdl2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogscreen_sdl2.c; path = src/sdl2/cogscreen_sdl2.c; sourceTree = "<group>"; };
+		CC9E247518747B25007226FB /* cogtimer_sdl2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogtimer_sdl2.c; path = src/sdl2/cogtimer_sdl2.c; sourceTree = "<group>"; };
+		CC9E247618747B25007226FB /* cogwindow_sdl2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogwindow_sdl2.c; path = src/sdl2/cogwindow_sdl2.c; sourceTree = "<group>"; };
+		CC9E247C18747B31007226FB /* coglogger_linux.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = coglogger_linux.c; path = src/linux/coglogger_linux.c; sourceTree = "<group>"; };
+		CC9E248018747B67007226FB /* cogaudiosource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogaudiosource.h; path = include/cogaudiosource.h; sourceTree = "<group>"; };
+		CC9E248118747B67007226FB /* cogfont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogfont.h; path = include/cogfont.h; sourceTree = "<group>"; };
+		CC9E248218747B67007226FB /* cogimage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogimage.h; path = include/cogimage.h; sourceTree = "<group>"; };
+		CC9E248318747B67007226FB /* cogimageformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogimageformat.h; path = include/cogimageformat.h; sourceTree = "<group>"; };
+		CC9E248418747B67007226FB /* coglight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coglight.h; path = include/coglight.h; sourceTree = "<group>"; };
+		CC9E248518747B67007226FB /* cogmaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogmaterial.h; path = include/cogmaterial.h; sourceTree = "<group>"; };
+		CC9E248618747B67007226FB /* cogmesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogmesh.h; path = include/cogmesh.h; sourceTree = "<group>"; };
+		CC9E248718747B67007226FB /* cogmodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogmodel.h; path = include/cogmodel.h; sourceTree = "<group>"; };
+		CC9E248818747B67007226FB /* cogshader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogshader.h; path = include/cogshader.h; sourceTree = "<group>"; };
+		CC9E248918747B67007226FB /* cogskeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogskeleton.h; path = include/cogskeleton.h; sourceTree = "<group>"; };
+		CC9E248A18747B67007226FB /* cogtexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogtexture.h; path = include/cogtexture.h; sourceTree = "<group>"; };
+		CC9E249618747B7F007226FB /* cogaudiosource.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogaudiosource.c; path = src/cogaudiosource.c; sourceTree = "<group>"; };
+		CC9E249718747B7F007226FB /* cogfont.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogfont.c; path = src/cogfont.c; sourceTree = "<group>"; };
+		CC9E249818747B7F007226FB /* cogimage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogimage.c; path = src/cogimage.c; sourceTree = "<group>"; };
+		CC9E249918747B7F007226FB /* coglight.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = coglight.c; path = src/coglight.c; sourceTree = "<group>"; };
+		CC9E249A18747B7F007226FB /* cogmaterial.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogmaterial.c; path = src/cogmaterial.c; sourceTree = "<group>"; };
+		CC9E249B18747B7F007226FB /* cogmesh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogmesh.c; path = src/cogmesh.c; sourceTree = "<group>"; };
+		CC9E249C18747B7F007226FB /* cogmodel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogmodel.c; path = src/cogmodel.c; sourceTree = "<group>"; };
+		CC9E249D18747B7F007226FB /* cogskeleton.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogskeleton.c; path = src/cogskeleton.c; sourceTree = "<group>"; };
+		CC9E249E18747B7F007226FB /* cogtexture.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogtexture.c; path = src/cogtexture.c; sourceTree = "<group>"; };
+		CC9E24AA18747BA1007226FB /* cogbundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogbundle.h; path = include/cogbundle.h; sourceTree = "<group>"; };
+		CC9E24AB18747BA1007226FB /* cogresourcemanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogresourcemanager.h; path = include/cogresourcemanager.h; sourceTree = "<group>"; };
+		CC9E24AC18747BA1007226FB /* cogscenemanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogscenemanager.h; path = include/cogscenemanager.h; sourceTree = "<group>"; };
+		CC9E24B018747BB5007226FB /* cogbundle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogbundle.c; path = src/cogbundle.c; sourceTree = "<group>"; };
+		CC9E24B118747BB5007226FB /* cogresourcemanager.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogresourcemanager.c; path = src/cogresourcemanager.c; sourceTree = "<group>"; };
+		CC9E24B218747BB5007226FB /* cogscenemanager.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogscenemanager.c; path = src/cogscenemanager.c; sourceTree = "<group>"; };
+		CC9E24B618747BC9007226FB /* cogsphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogsphere.h; path = include/cogsphere.h; sourceTree = "<group>"; };
+		CC9E24BA18747BE1007226FB /* libcog_init_modules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libcog_init_modules.h; path = include/libcog_init_modules.h; sourceTree = "<group>"; };
+		CC9E24BB18747BE1007226FB /* libcog_math_vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libcog_math_vector2.h; path = include/libcog_math_vector2.h; sourceTree = "<group>"; };
+		CC9E24BE18747BED007226FB /* libcog_init_modules.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = libcog_init_modules.c; path = src/libcog_init_modules.c; sourceTree = "<group>"; };
+		CC9E24BF18747BED007226FB /* libcog_math_vector2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = libcog_math_vector2.c; path = src/libcog_math_vector2.c; sourceTree = "<group>"; };
+		CC9E24C418747C1A007226FB /* cogcamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogcamera.h; path = include/cogcamera.h; sourceTree = "<group>"; };
+		CC9E24C518747C1A007226FB /* cogcolor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogcolor.h; path = include/cogcolor.h; sourceTree = "<group>"; };
+		CC9E24C618747C1A007226FB /* cogframebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogframebuffer.h; path = include/cogframebuffer.h; sourceTree = "<group>"; };
+		CC9E24C718747C1A007226FB /* coggizmo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coggizmo.h; path = include/coggizmo.h; sourceTree = "<group>"; };
+		CC9E24C818747C1A007226FB /* coggraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coggraphics.h; path = include/coggraphics.h; sourceTree = "<group>"; };
+		CC9E24C918747C1A007226FB /* cognode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cognode.h; path = include/cognode.h; sourceTree = "<group>"; };
+		CC9E24CA18747C1A007226FB /* cogrenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogrenderer.h; path = include/cogrenderer.h; sourceTree = "<group>"; };
+		CC9E24CB18747C1A007226FB /* cogrendererdeferred.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogrendererdeferred.h; path = include/cogrendererdeferred.h; sourceTree = "<group>"; };
+		CC9E24CC18747C1A007226FB /* cogrendererforward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogrendererforward.h; path = include/cogrendererforward.h; sourceTree = "<group>"; };
+		CC9E24CD18747C1A007226FB /* cogrendersystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogrendersystem.h; path = include/cogrendersystem.h; sourceTree = "<group>"; };
+		CC9E24CE18747C1A007226FB /* cogrendertarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogrendertarget.h; path = include/cogrendertarget.h; sourceTree = "<group>"; };
+		CC9E24CF18747C1A007226FB /* cogscene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogscene.h; path = include/cogscene.h; sourceTree = "<group>"; };
+		CC9E24D018747C1A007226FB /* cogscenegraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogscenegraph.h; path = include/cogscenegraph.h; sourceTree = "<group>"; };
+		CC9E24D118747C1A007226FB /* cogsurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogsurface.h; path = include/cogsurface.h; sourceTree = "<group>"; };
+		CC9E24E018747C28007226FB /* cogplatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogplatform.h; path = include/cogplatform.h; sourceTree = "<group>"; };
+		CC9E24E218747C3F007226FB /* cogcamera.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogcamera.c; path = src/cogcamera.c; sourceTree = "<group>"; };
+		CC9E24E318747C3F007226FB /* cognode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cognode.c; path = src/cognode.c; sourceTree = "<group>"; };
+		CC9E24E418747C3F007226FB /* cogramebuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogramebuffer.c; path = src/cogramebuffer.c; sourceTree = "<group>"; };
+		CC9E24E518747C3F007226FB /* cogrendererforward.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogrendererforward.c; path = src/cogrendererforward.c; sourceTree = "<group>"; };
+		CC9E24E618747C3F007226FB /* cogrendersystem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogrendersystem.c; path = src/cogrendersystem.c; sourceTree = "<group>"; };
+		CC9E24E718747C3F007226FB /* cogscene.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogscene.c; path = src/cogscene.c; sourceTree = "<group>"; };
+		CC9E24E818747C3F007226FB /* cogscenegraph.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogscenegraph.c; path = src/cogscenegraph.c; sourceTree = "<group>"; };
+		CC9E24E918747C3F007226FB /* cogsurface.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogsurface.c; path = src/cogsurface.c; sourceTree = "<group>"; };
+		CC9E24F218747C4B007226FB /* cogshader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cogshader.c; path = src/cogshader.c; sourceTree = "<group>"; };
+		CC9E24F618747C6F007226FB /* cog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cog.h; path = include/cog.h; sourceTree = "<group>"; };
+		CC9E24F718747C6F007226FB /* cogapp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cogapp.h; path = include/cogapp.h; sourceTree = "<group>"; };
+		CC9E24F818747C6F007226FB /* coggc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coggc.h; path = include/coggc.h; sourceTree = "<group>"; };
+		CC9E24FC18747C79007226FB /* cog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cog.c; path = src/cog.c; sourceTree = "<group>"; };
+		CC9E24FD18747C79007226FB /* coggc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = coggc.c; path = src/coggc.c; sourceTree = "<group>"; };
+		CC9E250018747F33007226FB /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		CC9E250218747F39007226FB /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = ../../../../../../../Library/Frameworks/Python.framework; sourceTree = "<group>"; };
+		CC9E250418747F7F007226FB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../../../../System/Library/Frameworks/OpenGL.framework; sourceTree = "<group>"; };
+		CC9E250618747F85007226FB /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = ../../../../../../../System/Library/Frameworks/OpenAL.framework; sourceTree = "<group>"; };
+		CC9E2508187480A3007226FB /* libIL.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libIL.1.dylib; path = ../../../../../../../usr/local/Cellar/devil/1.7.8/lib/libIL.1.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC8E39CA185E1FA500196EE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9E2509187480A3007226FB /* libIL.1.dylib in Frameworks */,
+				CC9E250318747F39007226FB /* Python.framework in Frameworks */,
+				CC9E250118747F33007226FB /* SDL2.framework in Frameworks */,
+				CC9E250518747F7F007226FB /* OpenGL.framework in Frameworks */,
+				CC9E250718747F85007226FB /* OpenAL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC8E39C4185E1FA500196EE2 = {
+			isa = PBXGroup;
+			children = (
+				CC9E2508187480A3007226FB /* libIL.1.dylib */,
+				CC9E250618747F85007226FB /* OpenAL.framework */,
+				CC9E250418747F7F007226FB /* OpenGL.framework */,
+				CC9E250218747F39007226FB /* Python.framework */,
+				CC9E250018747F33007226FB /* SDL2.framework */,
+				CC8E39D4185E200000196EE2 /* libcog */,
+				CC8E39CE185E1FA500196EE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC8E39CE185E1FA500196EE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC8E39CD185E1FA500196EE2 /* liblibcog.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC8E39D4185E200000196EE2 /* libcog */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E241A18747A26007226FB /* Cog */,
+				CC9E241918747A21007226FB /* Managers */,
+				CC9E241818747A1B007226FB /* Resources */,
+				CC9E241718747A17007226FB /* JSON */,
+				CC9E241618747A11007226FB /* PyCog */,
+				CC9E241518747A09007226FB /* Graphics */,
+				CC9E2414187479A1007226FB /* Math */,
+				CC9E242518747A61007226FB /* Platform */,
+				CC8E39D5185E200900196EE2 /* Utils */,
+			);
+			name = libcog;
+			sourceTree = "<group>";
+		};
+		CC8E39D5185E200900196EE2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CC8E39D7185E20FC00196EE2 /* src */,
+				CC8E39D6185E20E900196EE2 /* include */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		CC8E39D6185E20E900196EE2 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CC8E39DA185E214300196EE2 /* cogarray.h */,
+				CC8E39DB185E214300196EE2 /* coghash.h */,
+				CC8E39DC185E214300196EE2 /* coglist.h */,
+				CC8E39DD185E214300196EE2 /* cogstring.h */,
+				CC8E39DE185E214300196EE2 /* cogtypes.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		CC8E39D7185E20FC00196EE2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CC8E39D8185E210E00196EE2 /* cogstring.c */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		CC9E2414187479A1007226FB /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E242718747A79007226FB /* include */,
+				CC9E242618747A72007226FB /* src */,
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+		CC9E241518747A09007226FB /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E24C218747BF7007226FB /* include */,
+				CC9E24C318747BFB007226FB /* src */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+		CC9E241618747A11007226FB /* PyCog */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E24B918747BD4007226FB /* include */,
+				CC9E24B818747BD1007226FB /* src */,
+			);
+			name = PyCog;
+			sourceTree = "<group>";
+		};
+		CC9E241718747A17007226FB /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E241C18747A33007226FB /* include */,
+				CC9E241B18747A2F007226FB /* src */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		CC9E241818747A1B007226FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E247F18747B44007226FB /* include */,
+				CC9E247E18747B3D007226FB /* src */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CC9E241918747A21007226FB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E24A918747B88007226FB /* include */,
+				CC9E24A818747B82007226FB /* src */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		CC9E241A18747A26007226FB /* Cog */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E24F418747C53007226FB /* include */,
+				CC9E24F518747C58007226FB /* src */,
+			);
+			name = Cog;
+			sourceTree = "<group>";
+		};
+		CC9E241B18747A2F007226FB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E242118747A56007226FB /* cogjson.c */,
+				CC9E242218747A56007226FB /* cogjsonobject.c */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		CC9E241C18747A33007226FB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E241D18747A49007226FB /* cogjson.h */,
+				CC9E241E18747A49007226FB /* cogjsonobject.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		CC9E242518747A61007226FB /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E245D18747AD6007226FB /* include */,
+				CC9E245C18747AD2007226FB /* src */,
+			);
+			name = Platform;
+			sourceTree = "<group>";
+		};
+		CC9E242618747A72007226FB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E244A18747ACB007226FB /* cogcatmullrom2.c */,
+				CC9E244B18747ACB007226FB /* cogcatmullrom3.c */,
+				CC9E244C18747ACB007226FB /* cogmatrix2.c */,
+				CC9E244D18747ACB007226FB /* cogmatrix3.c */,
+				CC9E244E18747ACB007226FB /* cogmatrix4.c */,
+				CC9E244F18747ACB007226FB /* cogquaternion.c */,
+				CC9E245018747ACB007226FB /* cogvector2.c */,
+				CC9E245118747ACB007226FB /* cogvector3.c */,
+				CC9E245218747ACB007226FB /* cogvector4.c */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		CC9E242718747A79007226FB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E24B618747BC9007226FB /* cogsphere.h */,
+				CC9E242818747AA2007226FB /* cogbezier2.h */,
+				CC9E242918747AA2007226FB /* cogbezier3.h */,
+				CC9E242A18747AA2007226FB /* cogbox.h */,
+				CC9E242B18747AA2007226FB /* cogcatmullrom2.h */,
+				CC9E242C18747AA2007226FB /* cogcatmullrom3.h */,
+				CC9E242D18747AA2007226FB /* cogcircle.h */,
+				CC9E242E18747AA2007226FB /* cogmath.h */,
+				CC9E242F18747AA2007226FB /* cogmatrix2.h */,
+				CC9E243018747AA2007226FB /* cogmatrix3.h */,
+				CC9E243118747AA2007226FB /* cogmatrix4.h */,
+				CC9E243218747AA2007226FB /* cogquaternion.h */,
+				CC9E243318747AA2007226FB /* cogray2.h */,
+				CC9E243418747AA2007226FB /* cogray3.h */,
+				CC9E243518747AA2007226FB /* cogrect.h */,
+				CC9E243618747AA2007226FB /* cogvector2.h */,
+				CC9E243718747AA2007226FB /* cogvector3.h */,
+				CC9E243818747AA2007226FB /* cogvector4.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		CC9E245C18747AD2007226FB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E247C18747B31007226FB /* coglogger_linux.c */,
+				CC9E247218747B25007226FB /* cogapp_sdl2.c */,
+				CC9E247318747B25007226FB /* cogplatform_sdl2.c */,
+				CC9E247418747B25007226FB /* cogscreen_sdl2.c */,
+				CC9E247518747B25007226FB /* cogtimer_sdl2.c */,
+				CC9E247618747B25007226FB /* cogwindow_sdl2.c */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		CC9E245D18747AD6007226FB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E24E018747C28007226FB /* cogplatform.h */,
+				CC9E245E18747B08007226FB /* cogcontroler.h */,
+				CC9E245F18747B08007226FB /* coggl.h */,
+				CC9E246018747B08007226FB /* cogkeyboard.h */,
+				CC9E246118747B08007226FB /* coglogger.h */,
+				CC9E246218747B08007226FB /* cogmouse.h */,
+				CC9E246318747B08007226FB /* cogmutex.h */,
+				CC9E246418747B08007226FB /* cogscreen.h */,
+				CC9E246518747B08007226FB /* cogthread.h */,
+				CC9E246618747B08007226FB /* cogtimer.h */,
+				CC9E246718747B08007226FB /* cogwindow.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		CC9E247E18747B3D007226FB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E24F218747C4B007226FB /* cogshader.c */,
+				CC9E249618747B7F007226FB /* cogaudiosource.c */,
+				CC9E249718747B7F007226FB /* cogfont.c */,
+				CC9E249818747B7F007226FB /* cogimage.c */,
+				CC9E249918747B7F007226FB /* coglight.c */,
+				CC9E249A18747B7F007226FB /* cogmaterial.c */,
+				CC9E249B18747B7F007226FB /* cogmesh.c */,
+				CC9E249C18747B7F007226FB /* cogmodel.c */,
+				CC9E249D18747B7F007226FB /* cogskeleton.c */,
+				CC9E249E18747B7F007226FB /* cogtexture.c */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		CC9E247F18747B44007226FB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E248018747B67007226FB /* cogaudiosource.h */,
+				CC9E248118747B67007226FB /* cogfont.h */,
+				CC9E248218747B67007226FB /* cogimage.h */,
+				CC9E248318747B67007226FB /* cogimageformat.h */,
+				CC9E248418747B67007226FB /* coglight.h */,
+				CC9E248518747B67007226FB /* cogmaterial.h */,
+				CC9E248618747B67007226FB /* cogmesh.h */,
+				CC9E248718747B67007226FB /* cogmodel.h */,
+				CC9E248818747B67007226FB /* cogshader.h */,
+				CC9E248918747B67007226FB /* cogskeleton.h */,
+				CC9E248A18747B67007226FB /* cogtexture.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		CC9E24A818747B82007226FB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E24B018747BB5007226FB /* cogbundle.c */,
+				CC9E24B118747BB5007226FB /* cogresourcemanager.c */,
+				CC9E24B218747BB5007226FB /* cogscenemanager.c */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		CC9E24A918747B88007226FB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E24AA18747BA1007226FB /* cogbundle.h */,
+				CC9E24AB18747BA1007226FB /* cogresourcemanager.h */,
+				CC9E24AC18747BA1007226FB /* cogscenemanager.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		CC9E24B818747BD1007226FB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E24BE18747BED007226FB /* libcog_init_modules.c */,
+				CC9E24BF18747BED007226FB /* libcog_math_vector2.c */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		CC9E24B918747BD4007226FB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E24BA18747BE1007226FB /* libcog_init_modules.h */,
+				CC9E24BB18747BE1007226FB /* libcog_math_vector2.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		CC9E24C218747BF7007226FB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E24C418747C1A007226FB /* cogcamera.h */,
+				CC9E24C518747C1A007226FB /* cogcolor.h */,
+				CC9E24C618747C1A007226FB /* cogframebuffer.h */,
+				CC9E24C718747C1A007226FB /* coggizmo.h */,
+				CC9E24C818747C1A007226FB /* coggraphics.h */,
+				CC9E24C918747C1A007226FB /* cognode.h */,
+				CC9E24CA18747C1A007226FB /* cogrenderer.h */,
+				CC9E24CB18747C1A007226FB /* cogrendererdeferred.h */,
+				CC9E24CC18747C1A007226FB /* cogrendererforward.h */,
+				CC9E24CD18747C1A007226FB /* cogrendersystem.h */,
+				CC9E24CE18747C1A007226FB /* cogrendertarget.h */,
+				CC9E24CF18747C1A007226FB /* cogscene.h */,
+				CC9E24D018747C1A007226FB /* cogscenegraph.h */,
+				CC9E24D118747C1A007226FB /* cogsurface.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		CC9E24C318747BFB007226FB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E24E218747C3F007226FB /* cogcamera.c */,
+				CC9E24E318747C3F007226FB /* cognode.c */,
+				CC9E24E418747C3F007226FB /* cogramebuffer.c */,
+				CC9E24E518747C3F007226FB /* cogrendererforward.c */,
+				CC9E24E618747C3F007226FB /* cogrendersystem.c */,
+				CC9E24E718747C3F007226FB /* cogscene.c */,
+				CC9E24E818747C3F007226FB /* cogscenegraph.c */,
+				CC9E24E918747C3F007226FB /* cogsurface.c */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		CC9E24F418747C53007226FB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E24F618747C6F007226FB /* cog.h */,
+				CC9E24F718747C6F007226FB /* cogapp.h */,
+				CC9E24F818747C6F007226FB /* coggc.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		CC9E24F518747C58007226FB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E24FC18747C79007226FB /* cog.c */,
+				CC9E24FD18747C79007226FB /* coggc.c */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CC8E39CB185E1FA500196EE2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9E24F918747C6F007226FB /* cog.h in Headers */,
+				CC9E243C18747AA2007226FB /* cogcatmullrom2.h in Headers */,
+				CC9E241F18747A49007226FB /* cogjson.h in Headers */,
+				CC9E24FB18747C6F007226FB /* coggc.h in Headers */,
+				CC9E24BC18747BE1007226FB /* libcog_init_modules.h in Headers */,
+				CC9E243D18747AA2007226FB /* cogcatmullrom3.h in Headers */,
+				CC9E249018747B67007226FB /* cogmaterial.h in Headers */,
+				CC9E244818747AA2007226FB /* cogvector3.h in Headers */,
+				CC9E244518747AA2007226FB /* cogray3.h in Headers */,
+				CC9E24D818747C1A007226FB /* cogrenderer.h in Headers */,
+				CC9E24AD18747BA1007226FB /* cogbundle.h in Headers */,
+				CC9E244118747AA2007226FB /* cogmatrix3.h in Headers */,
+				CC8E39E3185E214300196EE2 /* cogtypes.h in Headers */,
+				CC9E24FA18747C6F007226FB /* cogapp.h in Headers */,
+				CC9E24D418747C1A007226FB /* cogframebuffer.h in Headers */,
+				CC9E24AF18747BA1007226FB /* cogscenemanager.h in Headers */,
+				CC9E248F18747B67007226FB /* coglight.h in Headers */,
+				CC9E244718747AA2007226FB /* cogvector2.h in Headers */,
+				CC9E24D318747C1A007226FB /* cogcolor.h in Headers */,
+				CC9E249518747B67007226FB /* cogtexture.h in Headers */,
+				CC8E39E1185E214300196EE2 /* coglist.h in Headers */,
+				CC9E248B18747B67007226FB /* cogaudiosource.h in Headers */,
+				CC9E249218747B67007226FB /* cogmodel.h in Headers */,
+				CC9E247018747B08007226FB /* cogtimer.h in Headers */,
+				CC9E244318747AA2007226FB /* cogquaternion.h in Headers */,
+				CC9E249318747B67007226FB /* cogshader.h in Headers */,
+				CC9E246E18747B08007226FB /* cogscreen.h in Headers */,
+				CC9E243A18747AA2007226FB /* cogbezier3.h in Headers */,
+				CC9E24E118747C28007226FB /* cogplatform.h in Headers */,
+				CC9E24B718747BC9007226FB /* cogsphere.h in Headers */,
+				CC9E244018747AA2007226FB /* cogmatrix2.h in Headers */,
+				CC9E243E18747AA2007226FB /* cogcircle.h in Headers */,
+				CC9E246918747B08007226FB /* coggl.h in Headers */,
+				CC9E24AE18747BA1007226FB /* cogresourcemanager.h in Headers */,
+				CC9E24D218747C1A007226FB /* cogcamera.h in Headers */,
+				CC9E249418747B67007226FB /* cogskeleton.h in Headers */,
+				CC9E248E18747B67007226FB /* cogimageformat.h in Headers */,
+				CC9E244418747AA2007226FB /* cogray2.h in Headers */,
+				CC9E24BD18747BE1007226FB /* libcog_math_vector2.h in Headers */,
+				CC9E249118747B67007226FB /* cogmesh.h in Headers */,
+				CC9E246C18747B08007226FB /* cogmouse.h in Headers */,
+				CC9E244618747AA2007226FB /* cogrect.h in Headers */,
+				CC9E246F18747B08007226FB /* cogthread.h in Headers */,
+				CC8E39E2185E214300196EE2 /* cogstring.h in Headers */,
+				CC9E243F18747AA2007226FB /* cogmath.h in Headers */,
+				CC8E39E0185E214300196EE2 /* coghash.h in Headers */,
+				CC9E24D918747C1A007226FB /* cogrendererdeferred.h in Headers */,
+				CC9E246D18747B08007226FB /* cogmutex.h in Headers */,
+				CC9E246A18747B08007226FB /* cogkeyboard.h in Headers */,
+				CC9E24DB18747C1A007226FB /* cogrendersystem.h in Headers */,
+				CC9E244918747AA2007226FB /* cogvector4.h in Headers */,
+				CC9E248C18747B67007226FB /* cogfont.h in Headers */,
+				CC9E24D618747C1A007226FB /* coggraphics.h in Headers */,
+				CC9E24D518747C1A007226FB /* coggizmo.h in Headers */,
+				CC9E247118747B08007226FB /* cogwindow.h in Headers */,
+				CC9E24D718747C1A007226FB /* cognode.h in Headers */,
+				CC9E24DF18747C1A007226FB /* cogsurface.h in Headers */,
+				CC9E248D18747B67007226FB /* cogimage.h in Headers */,
+				CC9E243B18747AA2007226FB /* cogbox.h in Headers */,
+				CC9E24DD18747C1A007226FB /* cogscene.h in Headers */,
+				CC9E242018747A49007226FB /* cogjsonobject.h in Headers */,
+				CC9E243918747AA2007226FB /* cogbezier2.h in Headers */,
+				CC9E24DA18747C1A007226FB /* cogrendererforward.h in Headers */,
+				CC9E244218747AA2007226FB /* cogmatrix4.h in Headers */,
+				CC9E246818747B08007226FB /* cogcontroler.h in Headers */,
+				CC9E246B18747B08007226FB /* coglogger.h in Headers */,
+				CC8E39DF185E214300196EE2 /* cogarray.h in Headers */,
+				CC9E24DE18747C1A007226FB /* cogscenegraph.h in Headers */,
+				CC9E24DC18747C1A007226FB /* cogrendertarget.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CC8E39CC185E1FA500196EE2 /* libcog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC8E39D1185E1FA500196EE2 /* Build configuration list for PBXNativeTarget "libcog" */;
+			buildPhases = (
+				CC8E39C9185E1FA500196EE2 /* Sources */,
+				CC8E39CA185E1FA500196EE2 /* Frameworks */,
+				CC8E39CB185E1FA500196EE2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libcog;
+			productName = libcog;
+			productReference = CC8E39CD185E1FA500196EE2 /* liblibcog.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC8E39C5185E1FA500196EE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Cog Web";
+			};
+			buildConfigurationList = CC8E39C8185E1FA500196EE2 /* Build configuration list for PBXProject "libcog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CC8E39C4185E1FA500196EE2;
+			productRefGroup = CC8E39CE185E1FA500196EE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC8E39CC185E1FA500196EE2 /* libcog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC8E39C9185E1FA500196EE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9E24FF18747C79007226FB /* coggc.c in Sources */,
+				CC9E24A518747B7F007226FB /* cogmodel.c in Sources */,
+				CC9E24A418747B7F007226FB /* cogmesh.c in Sources */,
+				CC9E245318747ACB007226FB /* cogcatmullrom2.c in Sources */,
+				CC9E24C118747BED007226FB /* libcog_math_vector2.c in Sources */,
+				CC9E24F018747C3F007226FB /* cogscenegraph.c in Sources */,
+				CC9E242418747A56007226FB /* cogjsonobject.c in Sources */,
+				CC9E24B418747BB5007226FB /* cogresourcemanager.c in Sources */,
+				CC9E24F118747C3F007226FB /* cogsurface.c in Sources */,
+				CC9E24ED18747C3F007226FB /* cogrendererforward.c in Sources */,
+				CC9E249F18747B7F007226FB /* cogaudiosource.c in Sources */,
+				CC9E24EF18747C3F007226FB /* cogscene.c in Sources */,
+				CC8E39D9185E210E00196EE2 /* cogstring.c in Sources */,
+				CC9E247918747B25007226FB /* cogscreen_sdl2.c in Sources */,
+				CC9E24B318747BB5007226FB /* cogbundle.c in Sources */,
+				CC9E247D18747B31007226FB /* coglogger_linux.c in Sources */,
+				CC9E24EB18747C3F007226FB /* cognode.c in Sources */,
+				CC9E24A018747B7F007226FB /* cogfont.c in Sources */,
+				CC9E247B18747B25007226FB /* cogwindow_sdl2.c in Sources */,
+				CC9E24C018747BED007226FB /* libcog_init_modules.c in Sources */,
+				CC9E24B518747BB5007226FB /* cogscenemanager.c in Sources */,
+				CC9E245618747ACB007226FB /* cogmatrix3.c in Sources */,
+				CC9E24A118747B7F007226FB /* cogimage.c in Sources */,
+				CC9E24A618747B7F007226FB /* cogskeleton.c in Sources */,
+				CC9E242318747A56007226FB /* cogjson.c in Sources */,
+				CC9E245B18747ACB007226FB /* cogvector4.c in Sources */,
+				CC9E245918747ACB007226FB /* cogvector2.c in Sources */,
+				CC9E24EE18747C3F007226FB /* cogrendersystem.c in Sources */,
+				CC9E247718747B25007226FB /* cogapp_sdl2.c in Sources */,
+				CC9E24EC18747C3F007226FB /* cogramebuffer.c in Sources */,
+				CC9E245A18747ACB007226FB /* cogvector3.c in Sources */,
+				CC9E24A718747B7F007226FB /* cogtexture.c in Sources */,
+				CC9E245418747ACB007226FB /* cogcatmullrom3.c in Sources */,
+				CC9E245818747ACB007226FB /* cogquaternion.c in Sources */,
+				CC9E24FE18747C79007226FB /* cog.c in Sources */,
+				CC9E245518747ACB007226FB /* cogmatrix2.c in Sources */,
+				CC9E24EA18747C3F007226FB /* cogcamera.c in Sources */,
+				CC9E24F318747C4B007226FB /* cogshader.c in Sources */,
+				CC9E24A218747B7F007226FB /* coglight.c in Sources */,
+				CC9E245718747ACB007226FB /* cogmatrix4.c in Sources */,
+				CC9E247A18747B25007226FB /* cogtimer_sdl2.c in Sources */,
+				CC9E247818747B25007226FB /* cogplatform_sdl2.c in Sources */,
+				CC9E24A318747B7F007226FB /* cogmaterial.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CC8E39CF185E1FA500196EE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CC8E39D0185E1FA500196EE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CC8E39D2185E1FA500196EE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/devil/1.7.8/lib,
+				);
+				OTHER_CFLAGS = "-DHAS_SDL2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CC8E39D3185E1FA500196EE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/devil/1.7.8/lib,
+				);
+				OTHER_CFLAGS = "-DHAS_SDL2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC8E39C8185E1FA500196EE2 /* Build configuration list for PBXProject "libcog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC8E39CF185E1FA500196EE2 /* Debug */,
+				CC8E39D0185E1FA500196EE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC8E39D1185E1FA500196EE2 /* Build configuration list for PBXNativeTarget "libcog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC8E39D2185E1FA500196EE2 /* Debug */,
+				CC8E39D3185E1FA500196EE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC8E39C5185E1FA500196EE2 /* Project object */;
+}

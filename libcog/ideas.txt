@@ -1,0 +1,18 @@
+
+  Deferred Renderer:
+  
+    Screen Space Effects:
+      +Screen Space Ambient Occlusion
+      Screen Space Reflections
+      Screen Space Anti Aliasing
+      
+    Utility Effects
+      Box Blur
+      +Gaussian Blur
+      +Edge Detect
+    
+    Lighting Effects
+      ShadowMap
+      Bloom
+      ToneMap
+    

@@ -1,0 +1,91 @@
+{
+  "races": [
+    {
+      "id": 1,
+      "name": "Human",
+      "rarity": "common",
+      "info": "Megastronk...very gud, always win, never loose, much intercourse",
+
+      "colors": ["white", "blue", "green", "red", "black", "colorless"],
+      
+      "stats": {
+        "attributes": {
+          "hp": 100,
+          "ap": 2,
+          "stamina": 20,
+          
+          "str": 3,
+          "dex": 3,
+          "int": 3,
+          
+          "ini": 3,
+          "spd": 3,
+          "lck": 1
+        },
+        "slots": {
+          "trait": 0,
+          "class": 1,
+          "specialization": 0,
+          
+          "training": 0,
+          "skill": 0,
+          "spell": 0,
+          
+          "chant": 0,
+          "rune": 0,
+          "inventory": 4
+        },
+        "body": [
+          "null", "humanoid/human/head", "null",
+          "humanoid/human/arm", "humanoid/human/body", "humanoid/human/arm",
+          "null", "humanoid/human/leggs", "null"
+        ]
+      }
+    },
+
+
+    {
+      "id": 1,
+      "name": "Wood Elves",
+      "rarity": "common",
+      "info": "Megafabulous...very penetrate, much nice, so elves",
+
+      "colors": ["white", "green", "black", "colorless"],
+
+      "stats": {
+        "attributes": {
+          "hp": 85,
+          "ap": 2,
+          "stamina": 22,
+          
+          "str": 2,
+          "dex": 4,
+          "int": 3,
+          
+          "ini": 3,
+          "spd": 3,
+          "lck": 1
+        },
+        "slots": {
+          "trait": 0,
+          "class": 1,
+          "specialization": 0,
+          
+          "training": 0,
+          "skill": 0,
+          "spell": 1,
+          
+          "chant": 0,
+          "rune": 0,
+          "inventory": 4
+        },
+        "body": [
+          "null", "humanoid/elven/head", "null",
+          "humanoid/elven/arm", "humanoid/elven/body", "humanoid/elven/arm",
+          "null", "humanoid/elven/leggs", "null"
+        ]
+      }
+    }
+
+  ]
+}
